@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero nav{
+    display: flex;
+    background-color: white;
+    padding: 10px 0;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    box-shadow: 1px 1px 4px 1px rgb(128, 124, 124);
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    gap: 65%;
+}
+
+
+.hero nav p a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 8px 12px;
+    color: black;
+    float: left;
+    margin-left: 15px;
+}
+
+.hero nav p a:hover{
+    background-color: rgb(208, 198, 198);
+}
+
+.hero ul{
+    margin: 5px 5px 0 0;
+    display: flex;
+    padding-right: 5px;
+    gap: 30px;
+}
+
+.hero ul li{
+    display: inline-block;
+}
+
+.hero ul li a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.hero ul li a:hover{
+    background-color: rgb(192, 186, 186);
+}
+
+.hero .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero .banner img{
+    position: relative;
+}
+
+.hero .banner p{
+    position: absolute;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+    bottom: 35%;
+    left: 35%;
+    font-size: 50px;
+    color:black;
+}
+
+.hero .banner span{
+    background-color:rgb(68, 65, 65);
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: white;
+    
+}
+
+.hero .images4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero .images .image{
+    display: inline-block;
+    margin-left: 15px;
+    margin-top:20px;
+    position: relative;
+}
+.hero .about .class{
+    font-size: 30px;
+    margin: 40px;
+}
+
+.hero hr{
+    margin: 10px auto;
+    width: 1250px;
+    background-color: rgba(253, 249, 249, 0.994);
+}
+
+.hero .about .images p{
+    background-color: black;
+    width: 100px;
+    color: white;
+    padding: 8px;  
+    position: absolute;
+}
+
+.hero .title1 p{
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.hero hr{
+    margin: 9px auto;
+    width: 1300px;
+}
+.hero .title1 .mid{
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 18px
+}
+
+.hero .cards{
+    display: inline-block;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.hero .content  p{
+    font-size: 20px;
+    margin: auto;
+}
+
+.hero .cards .mid{
+    font-size: 15px;
+    margin: 0;
+    margin-top: 15px;
+    color: rgb(191, 184, 184);
+}
+
+.hero .cards p{
+   padding-left:px;
+   margin-top: 17px;
+}
+
+.hero .cards button{
+    border: none;
+    background-color: rgb(234, 223, 223);
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+ }
+ 
+.hero .cards .content button:hover{
+    background-color: rgba(186, 182, 182, 0.886);
+}
+
+.contact .title50 .ctext{
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.contact .title50 hr{
+    margin-left: 2%;
+    margin-right: 2%;
+    /* width: 100%; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .title50 .ltext{
+    font-size: 17px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.form {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.contact form input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.contact form .button {
+    width: 15%;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 170px;
+}
+
+.contact form .button:hover {
+    color: black;
+    background-color: #e1e1e1;
+}
+
+.contact footer{
+   text-align: center;
+   background-color: bisque;
+   padding: 50px 0;
+}
+.contact footer a{
+    color: black;
+ }
+
+@media screen  and (max-width:1024px){
+    .hero nav{
+        width: 100%;
+        justify-content: flex-start;
+        gap:55%;
+        letter-spacing: 10px;
+    }
+    
+    .hero .about .line{
+        width: 91%;
+        padding: 0 3%;
+    }
+
+    .hero .title1 .line1{
+        width: 90%;
+        padding: 0 3%;
+
+    }
+
+    .hero hr{
+        margin: 9px auto;
+        width: 700px;
+    }
+}
+
+@media screen  and (max-width:768px){
+    .hero nav{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10%;
+        
+    }
+    .hero ul{
+        display: flex;
+        padding-left: 60%;
+      }
+
+}  
+
+
+
+@media screen and (max-width:425px){
+
+    .hero nav{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 0%;
+    }
+    .hero nav p a{
+        display: flex;
+        gap: 5px;
+    }
+    .hero ul li {
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .contact form input{
+        width: 95%;
+    }
+
+    .hero .banner p{
+        display: flex;
+        justify-content: center;
+        width: 35%;
+        align-items: center;
+        font-size: 40px;
+    }
+    
+    .hero .banner span{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    .hero nav p a{
+        padding-left: 35%;
+        font-size: 100%;
+    }
+}
