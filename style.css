@@ -1,305 +1,180 @@
 *{
-    padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
 }
-
-.hero nav{
+.banner{
+    background: url(img/photographer.jpg) no-repeat center/cover;
+    height: 600px;
     display: flex;
-    background-color: white;
-    padding: 10px 0;
-    width: 100%;
-    height: 35px;
-    position: fixed;
-    box-shadow: 1px 1px 4px 1px rgb(128, 124, 124);
-    z-index: 99;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 65%;
 }
 
-
-.hero nav p a{
-    text-decoration: none;
-    letter-spacing: 3px;
-    padding: 8px 12px;
-    color: black;
-    float: left;
-    margin-left: 15px;
+.banner .text{
+   border-style: groove;
+   border-color: rgb(255, 255, 255);
+   color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.hero nav p a:hover{
-    background-color: rgb(208, 198, 198);
-}
+.banner .text .head p {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
-.hero ul{
-    margin: 5px 5px 0 0;
+.banner .text p{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    padding-right: 5px;
-    gap: 30px;
+    justify-content: center;
+ }
+
+ .hero ul{
+    margin-top: 15px;
+ }
+
+.hero ul li{
+    display: flex;
+   flex-direction: row;
 }
 
 .hero ul li{
-    display: inline-block;
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(211, 206, 199);
+   margin-left: 35px;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-right: 40px;
 }
 
 .hero ul li a{
-    text-decoration: none;
-    letter-spacing: 3px;
-    color: black;
-}
-
-.hero ul li a:hover{
-    background-color: rgb(192, 186, 186);
-}
-
-.hero .banner{
     display: flex;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    letter-spacing: 4px;
+    padding: 10px 5px 10px 5px;
+}
+ 
+.hero ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 100%;
 }
 
-.hero .banner img{
-    position: relative;
+.images .img img{
+   width: 100%;
 }
 
-.hero .banner p{
-    position: absolute;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
-    bottom: 35%;
-    left: 35%;
-    font-size: 50px;
-    color:black;
+.body5{
+  background-color: rgb(219, 215, 215);
+  padding: 5px 40px 5px 40px ;
+  margin: 5px 210px 5px 210px;
 }
 
-.hero .banner span{
-    background-color:rgb(68, 65, 65);
-    font-size: 60px;
-    letter-spacing: 3px;
-    color: white;
-    
+.body5 .contact1 {
+    text-align: center;
+    font-size: 35px; 
 }
 
-.hero .images4{
+.body5 .body {
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.body5 form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.hero .images .image{
-    display: inline-block;
-    margin-left: 15px;
-    margin-top:20px;
-    position: relative;
-}
-.hero .about .class{
-    font-size: 30px;
-    margin: 40px;
+.body5 form .lain {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
-.hero hr{
-    margin: 10px auto;
-    width: 1250px;
-    background-color: rgba(253, 249, 249, 0.994);
+.body5 form .lain label {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif; 
 }
 
-.hero .about .images p{
-    background-color: black;
-    width: 100px;
-    color: white;
-    padding: 8px;  
-    position: absolute;
-}
-
-.hero .title1 p{
-    font-size: 30px;
-    margin-left: 25px;
-    margin-top: 20px;
-}
-.hero hr{
-    margin: 9px auto;
-    width: 1300px;
-}
-.hero .title1 .mid{
-    margin-left: 25px;
-    margin-top: 25px;
-    font-size: 18px
-}
-
-.hero .cards{
-    display: inline-block;
-    width: 300px;
-    margin-left: 25px;
-    margin-top: 50px;
-}
-
-.hero .content  p{
-    font-size: 20px;
-    margin: auto;
-}
-
-.hero .cards .mid{
-    font-size: 15px;
-    margin: 0;
-    margin-top: 15px;
-    color: rgb(191, 184, 184);
-}
-
-.hero .cards p{
-   padding-left:px;
-   margin-top: 17px;
-}
-
-.hero .cards button{
+.body5 form .lain input{
+    height: 35px;
     border: none;
-    background-color: rgb(234, 223, 223);
-    width: 100%;
-    height: 25px;
-    font-size: 20px;
- }
- 
-.hero .cards .content button:hover{
-    background-color: rgba(186, 182, 182, 0.886);
 }
 
-.contact .title50 .ctext{
-    font-size: 30px;
-    margin-left: 25px;
-    margin-top: 20px;
-}
-
-.contact .title50 hr{
-    margin-left: 2%;
-    margin-right: 2%;
-    /* width: 100%; */
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.contact .title50 .ltext{
-    font-size: 17px;
-    margin-left: 25px;
-    margin-bottom: 15px;
-}
-
-.form {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.contact form input{
-    width: 100%;
-    height: 45px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-.contact form .button {
-    width: 15%;
-    background-color: black;
-    color: white;
+.body5 form .send{
+    height: 35px;
     border: none;
-    width: 170px;
+    background-color: rgb(93, 91, 91);
+}
+.body5 form .send:hover{
+  background-color: rgb(224, 206, 182);
 }
 
-.contact form .button:hover {
+.body5 .sun{
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+.body5 .sun a{
     color: black;
-    background-color: #e1e1e1;
 }
 
-.contact footer{
-   text-align: center;
-   background-color: bisque;
-   padding: 50px 0;
-}
-.contact footer a{
-    color: black;
- }
-
-@media screen  and (max-width:1024px){
-    .hero nav{
-        width: 100%;
-        justify-content: flex-start;
-        gap:55%;
-        letter-spacing: 10px;
-    }
-    
-    .hero .about .line{
-        width: 91%;
-        padding: 0 3%;
-    }
-
-    .hero .title1 .line1{
-        width: 90%;
-        padding: 0 3%;
-
-    }
-
-    .hero hr{
-        margin: 9px auto;
-        width: 700px;
-    }
+@media screen and (max-width:768px) {
+ .body5{
+    background-color: rgb(219, 215, 215);
+    padding: 5px 40px 5px 40px ;
+    margin: 5px 10px 5px 10px;
+  }
 }
 
-@media screen  and (max-width:768px){
-    .hero nav{
-        width: 100%;
-        justify-content: flex-start;
-        gap: 10%;
-        
-    }
-    .hero ul{
-        display: flex;
-        padding-left: 60%;
+
+@media screen and (max-width:320px) {    
+     .banner .text .head p {
+         font-size: 30px;
       }
-
-}  
-
-
-
-@media screen and (max-width:425px){
-
-    .hero nav{
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 0%;
-    }
-    .hero nav p a{
-        display: flex;
-        gap: 5px;
-    }
-    .hero ul li {
-       justify-content: center;
-       align-items: center;
-    }
+     
+     .banner .text p{
+         font-size: 15px;
+      }
     
-    .contact form input{
-        width: 95%;
+    .hero ul li a{
+        letter-spacing: 0px;
+        padding: 10px 7px;
     }
 
-    .hero .banner p{
-        display: flex;
-        justify-content: center;
-        width: 35%;
-        align-items: center;
-        font-size: 40px;
+    .body5 .body {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
     }
-    
-    .hero .banner span{
-        font-size: 40px;
-    }
-
 }
 
-@media screen and (max-width:320px){
-    .hero nav p a{
-        padding-left: 35%;
-        font-size: 100%;
-    }
-}
